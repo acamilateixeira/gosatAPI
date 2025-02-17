@@ -2,27 +2,17 @@
 
 namespace App\Models;
 
-use App\Models\Offer;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-
-/**
- * @OA\Schema(
- *     schema="Institution",
- *     type="object",
- *     title="Institution",
- *     properties={
- *         @OA\Property(property="id", type="integer", example=1),
- *         @OA\Property(property="name", type="string", example="Banco PingApp"),
- *     }
- * )
- */
 class Institution extends Model
 {
     use HasFactory;
+
     protected $fillable = ['name'];
-    public function offers()
+
+    public function modalities()
     {
-        return $this->hasMany(Offer::class);
+        return $this->hasMany(Modality::class);
     }
 }
