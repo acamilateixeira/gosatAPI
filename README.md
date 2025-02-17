@@ -248,9 +248,8 @@ php artisan l5-swagger:generate
 
 ## 🖥 **Acessando o Projeto**
 
--   **API Laravel:** `http://127.0.0.1:8000`
 -   **Documentação Swagger:** `http://127.0.0.1:8000/api/documentation`
--   **Front-end Vue.js:** `http://127.0.0.1:5173`
+-   **Front-end:** `http://127.0.0.1:8000`
 
 ---
 
