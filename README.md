@@ -93,12 +93,11 @@ php artisan db:seed
 php artisan key:generate
 ```
 
-#### **2.7 Criar a Tabela de Cache**
+#### **2.7 Migrate**
 
 Caso necessário, execute:
 
 ```sh
-php artisan cache:table
 php artisan migrate
 ```
 
